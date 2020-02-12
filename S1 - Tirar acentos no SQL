@@ -1,0 +1,12 @@
+S1 - Tirar acentos no SQL
+
+
+Select TRANSLATE ('Testando a Função Translate - Retira Acentuação',
+                  'ŠŽšžŸÁÇÉÍÓÚÀÈÌÒÙÂÊÎÔÛÃÕËÜÏÖÑÝåáçéíóúàèìòùâêîôûãõëüïöñýÿ',
+                  'SZszYACEIOUAEIOUAEIOUAOEUIONYaaceiouaeiouaeiouaoeuionyy')
+                  As TRANSLATE FROM DUAL
+
+-------------
+
+select upper(translate(Trim('FLorianIIOONpolis'),'áÁàÀãÃâÂâäÄéÉêÊËëÈèíÍïÏÌìóÓôÔõÕöÖòÒúÚÙùúûüÜÛ','AAAAAAAAAAAEEEEEEEEIIIIIIOOOOOOOOOOUUUUUUUUU')) 
+FROM DUAL
